@@ -1,6 +1,12 @@
 const TelegramBot = require('node-telegram-bot-api');
 
+// دریافت توکن از محیط
 const token = process.env.TELEGRAM_TOKEN;
+
+if (!token) {
+  throw new Error("TELEGRAM_TOKEN is not provided!");
+}
+
 const bot = new TelegramBot(token, {polling: true});
 
 const WEB_APP_URL = "https://tonbotofficial.github.io/ton-miniapp/";
