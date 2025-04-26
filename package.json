@@ -1,0 +1,12 @@
+{
+  "name": "telegram-ton-bot",
+  "version": "1.0.0",
+  "description": "TON Airdrop Mini App Bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
